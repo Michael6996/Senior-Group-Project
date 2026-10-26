@@ -9,6 +9,11 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+#display the login page
+@app.route("/login", methods=["GET"])
+def login_page():
+    return render_template("login.html")
+
 #get route
 @app.route("/api/users", methods=["GET"])
 def get_users():
