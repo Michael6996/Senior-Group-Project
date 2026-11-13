@@ -3,7 +3,7 @@ Senior Group Project
 Group Members:
 Michael Berceli
 Athraa Toma
-Dayla Karem
+Dalya Karem
 Sydney Lum
 Matt Laskowski
 Suhani SInha
