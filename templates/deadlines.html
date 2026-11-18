@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Deadline Manager</title>
+<style>
+    body { font-family: Arial; max-width: 700px; margin: 40px auto; }
+    h1 { text-align: center; }
+    .deadline { 
+        padding: 10px; 
+        border: 1px solid #ccc; 
+        margin-bottom: 10px; 
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .expired { background: #ffdddd; }
+    button { padding: 6px 12px; }
+</style>
+</head>
+<body>
+
+<h1>Deadline Manager</h1>
+
+<form id="deadlineForm">
+    <input type="text" id="title" placeholder="Deadline title" required>
+    <input type="datetime-local" id="date" required>
+    <button type="submit">Add Deadline</button>
+</form>
+
+<h2>Your Deadlines</h2>
+<div id="deadlineList"></div>
+
+<script src="deadline.js"></script>
+</body>
+</html>
