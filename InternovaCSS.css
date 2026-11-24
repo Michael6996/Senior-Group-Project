@@ -255,3 +255,63 @@ body {
     color: #C3A7E7;
     font-size: 14px;
 }
+
+/*Style for calendar*/
+
+.calendar {
+    background-color: #1D1734;
+    border: 2px solid #70429B;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+.calendar h3 {
+    color: #FFF5DB;
+    text-align: center;
+    margin-top: 0;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);/*shortcut to make 7 equally sized columns*/ 
+	/*instead of:grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+    gap: 5px;
+}
+
+.calendar-grid span {/*styling all the dates at once/every <span> in the calendar grid*/
+    background-color: #29213E;
+    color: #FFF5DB;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.calendar-grid .weekday {
+    background-color: transparent;
+    color: #D8B4FE;
+    font-weight: bold;
+}
+
+.calendar-grid .deadline-date {/*overrides regular date backround color for deadline date*/
+/*when more multiple deadlines are present later we can add more highlights same way*/
+    background-color: #A855F7;
+    color: white;
+    font-weight: bold;
+}
+
+.calendar-note {
+    color: #D8B4FE;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.calendar-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #A855F7;
+    border-radius: 50%;
+    margin-right: 5px;
+}
