@@ -1,0 +1,257 @@
+
+body {
+    background-color: #0B0B1F;
+    color: #FFF5DB;
+    border: 3px solid #A855F7;
+    border-radius: 20px;
+    min-height: 100vh;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.internova {
+    margin: 0;
+}
+
+.internova img {
+    width: 240px;
+    height: auto;
+}
+.login-link{
+	text-align: right;
+	position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.settings{
+	text-align: right;
+	position: absolute;
+	top: 1px;
+	right: 120px;
+}
+.alerts{
+	text-align: right;
+	position: absolute;
+	top: 1px;
+	right: 220px;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.browse {
+    background-color: #A855F7;
+    padding: 8px 15px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.myapplications {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.deadlines {
+    margin: 0;
+    text-decoration: underline;
+}
+.login{
+	text-align: right;
+}
+.application-stats {
+    display: flex;
+    flex-direction: column; /* stacks vertically*/
+    gap: 20px; /* used instead of br tags*/
+    width: 100%;
+    margin-top: 55px;
+}
+
+.stat-card {
+    background-color: #1D1734;
+    border: 2px solid #70429B;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    color: #C084FC;
+    font-size: 32px;
+    margin: 0;
+}
+
+.stat-card h3 {
+    color: #FFF5DB;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.login-link, .settings, .alerts {
+    color: #E879F9;
+}
+.login-link:hover {
+    color: #FFF5DB;
+}
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    display: block;
+}
+
+.search-bar {
+    flex: 1;
+    min-width: 200px;
+    max-width: 600px;
+    padding: 14px 20px;
+    background-color: #211B37;
+    border: 2px solid #A855F7;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar::placeholder {
+    color: #BCA6D9;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #E879F9;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+.dashboard {
+    display: grid; /*organize in rows and columns*/
+    grid-template-columns: 190px minmax(0, 1fr) 320px;/*190px app status, minmax lets middle shrink if needed, 320px deadlines and calendar*/
+    gap: 30px;
+    margin-top: 35px;
+    align-items: start;
+}
+
+/*style for internship card*/
+
+.internship-card {
+    background-color: #1D1734;
+    border: 2px solid #70429B;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;/*places internship title on the left and summer 2027 on the right*/
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card-top h3 {
+    color: #FFF5DB;
+    margin: 0;
+}
+
+.company {
+    color: #D8B4FE;
+    margin-top: 8px;
+}
+
+.internship-tag {
+    background-color: #38265A;
+    color: #E9C6FF;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.internship-details {
+    color: #C3A7E7;
+    font-size: 14px;
+}
+
+.internship-description {
+    color: #D6C6E6;
+    line-height: 1.6;/*controls vertical spacing between lines of text*/
+}
+
+.card-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.save-button {
+    background-color: #A855F7;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.view-button {
+    color: #EDD6FF;
+    border: 1px solid #A855F7;
+    border-radius: 10px;
+    padding: 11px 18px;
+    text-decoration: none;
+}
+
+.save-button:hover {/*tells CSS what should happen when mouse moved over the button*/
+    background-color: #9333EA;
+}
+
+.view-button:hover {
+    background-color: #38265A;
+}
+
+/*style for deadlines card*/
+
+.deadline-list {
+    display: flex;/*way to arrange everything - flexbox*/
+    flex-direction: column;/*stack the cards vertically*/
+    gap: 20px;/*space between them*/
+    margin-top: 25px;
+}
+
+.deadline-card {
+    background-color: #1D1734;
+    border: 2px solid #70429B;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.deadline-card h3 {/*targets only h3 elements inside the same class*/
+    color: #E9B9FF;
+    margin-top: 0;
+}
+
+.deadline-card p {
+    color: #FFF5DB;
+    font-weight: bold;
+}
+
+.deadline-card span {
+    color: #C3A7E7;
+    font-size: 14px;
+}

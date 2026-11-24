@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Internova</title>
+<link rel="stylesheet" href="InternovaCSS.css">
+<!--add border around whole page-->
+<!--Add search bar-->
+
+</head>
+
+<body>
+<header class="topbar">
+
+    <a href="Internova.html">
+        <img src="logo.png" class="logo" alt="Internova">
+    </a>
+
+    <input type="search" class="search-bar"
+           placeholder="Search internships...">
+
+    <nav class="nav-links">
+        <a href="#">Alerts</a>
+        <a href="#">Settings</a>
+        <a href="Login.html">Login</a>
+    </nav>
+
+</header>
+
+<hr>
+
+
+<main class="dashboard">  <!--holds main content of the webpage-->
+
+    <!-- LEFT: Application Tracker -->
+    <aside class="left-column">
+        <div class="application-stats"> <!-- groups all 3 boxes together-->
+
+            <div class="stat-card"><!-- creates individual boxes for each-->
+                <h2 class="stat-number">0</h2><!--number will eventually update, placed 0 for placeholder-->
+                <h3>Applied</h3>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="stat-number">0</h2>
+                <h3>Interview</h3>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="stat-number">0</h2>
+                <h3>Offers</h3>
+            </div>
+
+        </div>
+    </aside><!--holds supporting stats-->
+
+    <!-- MIDDLE: Internships -->
+    <section class="middle-column">
+        <div class="tabs">
+            <h2 class="browse">Browse</h2>
+            <h2 class="myapplications">My Applications</h2>
+        </div>
+		
+		<!-- Internship cards go here -->
+		
+		<article class="internship-card"> <!-- Groups a complete internship posting -->
+
+    <div class="card-top">
+        <div>
+            <h3>Software Engineering Intern</h3>
+            <p class="company">Example Company</p>
+        </div>
+
+        <span class="internship-tag">Summer 2027</span><!-- holds small piece of text -->
+    </div>
+
+    <p class="internship-details">Remote | Paid Internship</p>
+
+    <p class="internship-description">Work alongside a development team to build software, test applications, and gain hands-on experience.</p>
+
+    <div class="card-buttons">
+        <button type="button" class="save-button">Save Internship</button><!-- creates clickable button -->
+
+        <a href="#" class="view-button">View Posting</a><!-- link to another page -->
+    </div>
+
+</article>
+		
+
+    </section><!--groups related stuff-->
+
+    <!-- RIGHT: Deadlines and Calendar -->
+    <aside class="right-column">
+        <h2 class="deadlines">Upcoming Deadlines</h2>
+
+        <!-- Calendar will go here -->
+
+<div class="deadline-list"><!--container holding the deadlines-->
+
+    <div class="deadline-card"><!--class for each individual deadline box-->
+        <h3>Dec 15</h3>
+        <p>Software Engineering Intern</p>
+        <span>Example Company</span>
+    </div>
+
+    <div class="deadline-card">
+        <h3>Jan 5</h3>
+        <p>Cybersecurity Intern</p>
+        <span>Example Company</span>
+    </div>
+
+</div>
+
+    </aside><!--holds supporting deadlines-->
+
+</main>
+
+</body>
+</html>
